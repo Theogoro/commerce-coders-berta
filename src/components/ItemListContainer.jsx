@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import ItemList from "./ItemList";
 import { getProducts } from "../data/product";
+import LoadingItemsIndicator from "./LoadingItemsIndicator";
 
 const ItemListContainer = (props) => {
   const { message } = props;
@@ -14,7 +15,8 @@ const ItemListContainer = (props) => {
   return (
     <>
       <div>{message}</div>
-      <ItemList items={items} />
+      {items.length === 0 && <LoadingItemsIndicator /> }
+      {items.length > 0 && <ItemList items={items} />}
     </>
   );
 };

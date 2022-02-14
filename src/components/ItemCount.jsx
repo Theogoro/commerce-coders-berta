@@ -5,7 +5,7 @@ const ItemCountButton = (props) => {
 
   return (
     <button
-      className="text-amber-600 transition hover:bg-gray-100 h-full w-20 rounded cursor-pointer outline-none text-xl"
+      className="text-amber-600 transition hover:bg-gray-100 h-full w-10 rounded cursor-pointer outline-none text-xl"
       onClick={fn}
     >
       {text}
@@ -34,8 +34,8 @@ const ItemCount = ({ stock, initial, onAdd }) => {
   };
 
   return (
-    <div className="item-count-wrapper flex flex-col gap-2 overflow-hidden">
-      <div className="flex flex-row bg-white border h-10 rounded-lg relative mt-1 w-40 content-center shadow-lg">
+    <div className="item-count-wrapper flex flex-col gap-2 overflow-hidden items-center">
+      <div className="flex flex-row justify-between bg-white border h-10 rounded-lg relative mt-1 w-full content-center shadow-lg">
         <ItemCountButton fn={reduceCounter} text="-" />
         <p className="w-40 text-center h-full items-center align-middle leading-loose">
           {counter}
@@ -43,7 +43,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
         <ItemCountButton fn={increaseCounter} text="+" />
       </div>
       <button
-        className="border border-amber-500 text-amber-500 hover:border-amber-700 hover:text-amber-700 h-10 rounded-lg relative bg-white mt-1 w-40 transition"
+        className="border border-amber-500 text-amber-500 hover:border-amber-700 hover:text-amber-700 h-10 rounded-lg relative bg-white mt-1 w-full transition"
         onClick={clickHandler}
       >
         Agregar al carrito
