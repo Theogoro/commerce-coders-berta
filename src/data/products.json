@@ -1,87 +1,111 @@
 [
   {
     "id": 1,
-    "title": "Cappuccino",
+    "title": "Cappuccino Colombiano",
     "price": 2.5,
     "pictureUrl": "https://image.freepik.com/psd-gratis/bolsa-papel-maqueta-cafe_23-2148884491.jpg",
-    "stock": 10
+    "stock": 10,
+    "category": "Colombiano",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum elit ut mi posuere tincidunt sit amet nec quam. Sed viverra eu mi fermentum sagittis. Morbi quis tortor justo. Sed at tincidunt dolor. Suspendisse id molestie dolor, et rhoncus sem. Sed vestibulum facilisis mi et pellentesque. Nullam id metus lacus. Maecenas imperdiet eros rutrum accumsan condimentum."
   },
   {
     "id": 2,
-    "title": "Latte",
+    "title": "Latte Colombiano",
     "price": 2.5,
     "pictureUrl": "https://image.freepik.com/psd-gratis/bolsa-papel-maqueta-cafe_23-2148884491.jpg",
-    "stock": 10
+    "stock": 10,
+    "category": "Colombiano",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum elit ut mi posuere tincidunt sit amet nec quam. Sed viverra eu mi fermentum sagittis. Morbi quis tortor justo. Sed at tincidunt dolor. Suspendisse id molestie dolor, et rhoncus sem. Sed vestibulum facilisis mi et pellentesque. Nullam id metus lacus. Maecenas imperdiet eros rutrum accumsan condimentum."
   },
   {
     "id": 3,
-    "title": "Mocha",
+    "title": "Mocha Argentino",
     "price": 2.5,
     "pictureUrl": "https://image.freepik.com/psd-gratis/bolsa-papel-maqueta-cafe_23-2148884491.jpg",
-    "stock": 10
+    "stock": 10,
+    "category": "Nacional",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum elit ut mi posuere tincidunt sit amet nec quam. Sed viverra eu mi fermentum sagittis. Morbi quis tortor justo. Sed at tincidunt dolor. Suspendisse id molestie dolor, et rhoncus sem. Sed vestibulum facilisis mi et pellentesque. Nullam id metus lacus. Maecenas imperdiet eros rutrum accumsan condimentum."
   },
   {
     "id": 4,
-    "title": "Americano",
+    "title": "Americano Argento",
     "price": 2.5,
     "pictureUrl": "https://image.freepik.com/psd-gratis/bolsa-papel-maqueta-cafe_23-2148884491.jpg",
-    "stock": 10
+    "stock": 10,
+    "category": "Nacional",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum elit ut mi posuere tincidunt sit amet nec quam. Sed viverra eu mi fermentum sagittis. Morbi quis tortor justo. Sed at tincidunt dolor. Suspendisse id molestie dolor, et rhoncus sem. Sed vestibulum facilisis mi et pellentesque. Nullam id metus lacus. Maecenas imperdiet eros rutrum accumsan condimentum."
   },
   {
     "id": 5,
-    "title": "Café con leche",
+    "title": "Café con leche Argento",
     "price": 2.5,
     "pictureUrl": "https://image.freepik.com/psd-gratis/bolsa-papel-maqueta-cafe_23-2148884491.jpg",
-    "stock": 10
+    "stock": 10,
+    "category": "Nacional",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum elit ut mi posuere tincidunt sit amet nec quam. Sed viverra eu mi fermentum sagittis. Morbi quis tortor justo. Sed at tincidunt dolor. Suspendisse id molestie dolor, et rhoncus sem. Sed vestibulum facilisis mi et pellentesque. Nullam id metus lacus. Maecenas imperdiet eros rutrum accumsan condimentum."
   },
   {
     "id": 6,
-    "title": "Café con leche",
+    "title": "Café con leche colombiano",
     "price": 2.5,
     "pictureUrl": "https://image.freepik.com/psd-gratis/bolsa-papel-maqueta-cafe_23-2148884491.jpg",
-    "stock": 10
+    "stock": 10,
+    "category": "Colombiano",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum elit ut mi posuere tincidunt sit amet nec quam. Sed viverra eu mi fermentum sagittis. Morbi quis tortor justo. Sed at tincidunt dolor. Suspendisse id molestie dolor, et rhoncus sem. Sed vestibulum facilisis mi et pellentesque. Nullam id metus lacus. Maecenas imperdiet eros rutrum accumsan condimentum."
   },
   {
     "id": 7,
-    "title": "Cappuccino",
+    "title": "Cappuccino arabe",
     "price": 2.5,
     "pictureUrl": "https://image.freepik.com/psd-gratis/bolsa-papel-maqueta-cafe_23-2148884491.jpg",
-    "stock": 10
+    "stock": 10,
+    "category": "Arabe",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum elit ut mi posuere tincidunt sit amet nec quam. Sed viverra eu mi fermentum sagittis. Morbi quis tortor justo. Sed at tincidunt dolor. Suspendisse id molestie dolor, et rhoncus sem. Sed vestibulum facilisis mi et pellentesque. Nullam id metus lacus. Maecenas imperdiet eros rutrum accumsan condimentum."
   },
   {
     "id": 8,
-    "title": "Latte",
+    "title": "Latte arabe",
     "price": 2.5,
     "pictureUrl": "https://image.freepik.com/psd-gratis/bolsa-papel-maqueta-cafe_23-2148884491.jpg",
-    "stock": 10
+    "stock": 10,
+    "category": "Arabe",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum elit ut mi posuere tincidunt sit amet nec quam. Sed viverra eu mi fermentum sagittis. Morbi quis tortor justo. Sed at tincidunt dolor. Suspendisse id molestie dolor, et rhoncus sem. Sed vestibulum facilisis mi et pellentesque. Nullam id metus lacus. Maecenas imperdiet eros rutrum accumsan condimentum."
   },
   {
     "id": 9,
-    "title": "Mocha",
+    "title": "Mocha arabe",
     "price": 2.5,
     "pictureUrl": "https://image.freepik.com/psd-gratis/bolsa-papel-maqueta-cafe_23-2148884491.jpg",
-    "stock": 10
+    "stock": 10,
+    "category": "Arabe",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum elit ut mi posuere tincidunt sit amet nec quam. Sed viverra eu mi fermentum sagittis. Morbi quis tortor justo. Sed at tincidunt dolor. Suspendisse id molestie dolor, et rhoncus sem. Sed vestibulum facilisis mi et pellentesque. Nullam id metus lacus. Maecenas imperdiet eros rutrum accumsan condimentum."
   },
   {
     "id": 10,
-    "title": "Americano",
+    "title": "Americano argento",
     "price": 2.5,
     "pictureUrl": "https://image.freepik.com/psd-gratis/bolsa-papel-maqueta-cafe_23-2148884491.jpg",
-    "stock": 10
+    "stock": 10,
+    "category": "Nacional",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum elit ut mi posuere tincidunt sit amet nec quam. Sed viverra eu mi fermentum sagittis. Morbi quis tortor justo. Sed at tincidunt dolor. Suspendisse id molestie dolor, et rhoncus sem. Sed vestibulum facilisis mi et pellentesque. Nullam id metus lacus. Maecenas imperdiet eros rutrum accumsan condimentum."
   },
   {
     "id": 11,
-    "title": "Café con leche",
+    "title": "Café con leche Colombiano",
     "price": 2.5,
     "pictureUrl": "https://image.freepik.com/psd-gratis/bolsa-papel-maqueta-cafe_23-2148884491.jpg",
-    "stock": 10
+    "stock": 10,
+    "category": "Colombiano",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum elit ut mi posuere tincidunt sit amet nec quam. Sed viverra eu mi fermentum sagittis. Morbi quis tortor justo. Sed at tincidunt dolor. Suspendisse id molestie dolor, et rhoncus sem. Sed vestibulum facilisis mi et pellentesque. Nullam id metus lacus. Maecenas imperdiet eros rutrum accumsan condimentum."
   },
   {
     "id": 12,
-    "title": "Café con leche",
+    "title": "Café con leche Arabe",
     "price": 2.5,
     "pictureUrl": "https://image.freepik.com/psd-gratis/bolsa-papel-maqueta-cafe_23-2148884491.jpg",
-    "stock": 10
+    "stock": 10,
+    "category": "Arabe",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum elit ut mi posuere tincidunt sit amet nec quam. Sed viverra eu mi fermentum sagittis. Morbi quis tortor justo. Sed at tincidunt dolor. Suspendisse id molestie dolor, et rhoncus sem. Sed vestibulum facilisis mi et pellentesque. Nullam id metus lacus. Maecenas imperdiet eros rutrum accumsan condimentum."
   }
 ]
   
