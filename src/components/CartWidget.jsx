@@ -1,5 +1,4 @@
 import { ShoppingCartIcon } from "@heroicons/react/outline";
-import "./styles/CartWidget.css";
 
 const CartWidget = (props) => {
   return (
