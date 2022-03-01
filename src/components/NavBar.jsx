@@ -80,7 +80,9 @@ const NavBar = (props) => {
             </button>
           </li>
         </ul>
-        <CartWidget />
+        <Link to="/cart">
+          <CartWidget />
+        </Link>
       </nav>
     </header>
   );

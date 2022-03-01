@@ -5,11 +5,23 @@ import { CartContext } from "../context/CartContext";
 
 const ItemDetail = ({ item }) => {
   const { addItem, isInCart, getItem } = useContext(CartContext);
-  const [count, setCount] = useState(isInCart(item.id) ? getItem(item.id).quantity : undefined);
+  const [count, setCount] = useState(undefined);
 
   const onAdd = (count) => {
-    setCount(count);
+    
+    if (isInCart(item.id)) {
+      const itemOnCart = getItem(item.id);
+
+      if (itemOnCart.quantity + count > item.stock) {
+        alert(`No hay stock suficiente de este producto! Intenta agregnado una cantidad menor o igual a ${item.stock - itemOnCart.quantity}`);
+        return;
+      }
+
+      count += itemOnCart.quantity;
+    }
+    
     addItem(item, count);
+    setCount(count);
   }
 
   return (
@@ -24,7 +36,7 @@ const ItemDetail = ({ item }) => {
         <p>{item.description}</p>
         
         {!count && <ItemCount stock={item.stock} initial={1} onAdd={onAdd} /> }
-        {count && <Link to="/cart" className="border px-4 py-2 mt-4 block text-center shadow rounded border-amber-500 text-amber-500 hover:border-amber-700 hover:text-amber-700 transition">Ver en el carrito</Link>}
+        {count && <Link to="/cart" className="border px-4 py-2 mt-4 block text-center shadow rounded border-amber-500 text-amber-500 hover:border-amber-700 hover:text-amber-700 transition">Terminar compra</Link>}
       </div>
     </div>
   );

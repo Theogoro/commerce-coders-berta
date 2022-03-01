@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
 
 const CartItem = (props) => {
@@ -21,14 +22,18 @@ const CartItem = (props) => {
     <li className="border-b-2 border-gray-100 p-4">
       <div className="flex justify-between items-center">
         <div className="w-1/3">
+        <Link to={`/products/${item.id}`}>
           <img
-            className="w-20 h-20 rounded mr-4"
+            className="w-20 h-20 rounded mr-4 hover:opacity-75 transition"
             src={item.pictureUrl}
             alt={item.title}
           />
+        </Link>
         </div>
         <div className="flex flex-col w-2/3">
-          <h3 className="text-sm">{item.title}</h3>
+          <Link to={`/products/${item.id}`}>
+            <h3 className="text-sm hover:underline">{item.title}</h3>
+          </Link>
           <span className="text-sm">${item.price}</span>
         </div>
         <div className="flex flex-col gap-2">
