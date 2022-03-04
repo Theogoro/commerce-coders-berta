@@ -1,27 +1,19 @@
-import categories from "./categories.json"
+import {db} from "./firebaseConfig";
+import {getDocs, query} from "firebase/firestore";
+import getCollection from "./common/getCollection";
 
 /**
  * @description Return all categories
  * @returns {[{id: Int, name: String}]} Categories
  */
-export const getCategories = () => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve(categories);
-    }, 100);
-  })
-}
-
-/**
- * @description Return one category
- * @param {String} name Name of the category
- * @returns {{id: Int, name: String}} Category
- */
-export const getCategory = (name) => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve(categories.find(category => category.name === name));
+export const getCategories = async() => {
+  const categoriesSnapshot = await getDocs(query(getCollection(db, "categories")));
+  const categories = categoriesSnapshot.docs.map(doc => {
+    return {
+      id: doc.id,
+      ...doc.data()
     }
-    , 100);
-  })
+  }
+  );
+  return categories;
 }
