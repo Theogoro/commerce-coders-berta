@@ -21,11 +21,8 @@ const ItemDetailContainer = () => {
 
       setItem(data);
     });
-
-    /** 
-     * Incluimos el ID del producto en la lista de dependencias para que cuando el producto cambie,
-     * se actualice el componente con el nuevo producto 
-     * */
+    
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   return (

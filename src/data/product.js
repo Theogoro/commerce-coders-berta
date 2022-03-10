@@ -1,5 +1,5 @@
 import { db } from "./firebaseConfig";
-import { doc, getDocs, getDoc, query, where } from "firebase/firestore";
+import { doc, getDocs, getDoc, query, where, updateDoc } from "firebase/firestore";
 import getCollection from "./common/getCollection";
 
 /**
@@ -43,3 +43,13 @@ export const getProduct = async (id) => {
   };
 };
 
+/**
+ * 
+ * @param {string} id Id del producto
+ * @param {*} quantity Cantidad de productos a descontar
+ */
+export const discoundStock = async (id, quantity) => {
+  const productSnapshot = await getDoc(doc(db, `products/${id}`));
+  const stock = productSnapshot.data().stock - quantity;
+  await updateDoc(productSnapshot.ref, { stock });
+}
