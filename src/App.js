@@ -7,7 +7,6 @@ import ItemListContainer from './components/ItemListContainer';
 import CartContainer from './components/CartContainer';
 import CartProvider from './context/CartContext';
 
-import './App.css';
 
 function App() {
   return (

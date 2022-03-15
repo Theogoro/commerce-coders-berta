@@ -6,10 +6,7 @@ const CartProvider = ({ defaultValue = [], children }) => {
   const [cart, setCart] = useState(defaultValue);
 
   const addItem = (item, quantity) => {
-    console.log("-->Adding item to cart:", item, quantity);
-
     if (isInCart(item.id)) {
-      // Prevent adding duplicate items
       updateQuantity(item, quantity);
       return;
     }

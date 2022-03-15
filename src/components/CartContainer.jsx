@@ -6,9 +6,11 @@ import { createOrder } from "../data/order";
 
 import BuyerForm from "./BuyerForm";
 import CartList from "./CartList";
+import CartMessage from "./CartMessage";
 
 const CartContainer = () => {
   const [buyerData, setBuyerData] = useState({});
+  const [message, setMessage] = useState("");
   const { cart, getTotalQuantity, getTotalPrice, clear } =
     useContext(CartContext);
   const navegator = useNavigate();
@@ -16,12 +18,16 @@ const CartContainer = () => {
   const handleCheckout = () => {
     const isBuyerDataValid =
       Object.keys(buyerData).length > 0 &&
-      buyerData?.name.length > 0 &&
-      buyerData?.email.length > 0 &&
-      buyerData?.phone.length > 0;
+      buyerData?.name?.length > 0 &&
+      buyerData?.email?.length > 0 &&
+      /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(buyerData?.email) &&
+      buyerData?.phone?.length > 0;
 
     if (!isBuyerDataValid) {
-      alert("Por favor completa tus datos para que podamos procesar tu pedido");
+      setMessage({
+        type: "error",
+        text: "Por favor completa/corrige tus datos para que podamos procesar tu pedido",
+      });
       return;
     }
 
@@ -34,19 +40,30 @@ const CartContainer = () => {
 
     createOrder(buyerData, cartReduced, getTotalPrice())
       .then((orderId) => {
-        alert(`Tu orden ha sido registrada con el id ${orderId}. Gracias!`);
-        clear();
-        navegator("/");
+        setMessage({
+          text: `Tu orden ha sido registrada con el id ${orderId}. Gracias!`,
+          type: "success",
+          fn: () => {
+            setTimeout(() => {
+              clear();
+              navegator("/");
+            }, 3000);
+          },
+        });
       })
       .catch((error) => {
         console.error(error);
-        alert("Error al crear la orden :(");
+        setMessage({
+          text: "Hubo un error al procesar tu pedido. Por favor intenta nuevamente",
+          type: "error",
+        });
       });
   };
 
   return (
-    <div className="CartContainer px-4 py-2 max-w-md mx-auto my-2 border bg-white rounder shadow">
+    <div className="CartContainer px-4 py-2 max-w-md mx-auto my-4  border bg-white rounder shadow">
       <h2 className="font-bold text-2xl">Carrito</h2>
+
       {getTotalQuantity() > 0 ? (
         <>
           <CartList cart={cart} />
@@ -60,6 +77,7 @@ const CartContainer = () => {
               Pagar
             </button>
           </div>
+          <CartMessage message={message} />
         </>
       ) : (
         <>
